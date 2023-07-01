@@ -21,7 +21,7 @@ class AppModule extends Module {
         ),
         ModuleRoute(
           '/categoria',
-          module: CategoriaModule(),
+          module: CategoriaModule(export: false),
         ),
         ModuleRoute(
           '/produto',

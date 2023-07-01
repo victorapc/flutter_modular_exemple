@@ -12,7 +12,7 @@ class ProdutoModule extends Module {
   // irá importar o PrecoModel e no Bind dentro do CategoriaModule na parte de
   // injeção de dependência do Bind do PrecoModel adicionado o parâmetro export.
   List<Module> get imports => [
-        CategoriaModule(),
+        CategoriaModule(export: true),
       ];
 
   @override
